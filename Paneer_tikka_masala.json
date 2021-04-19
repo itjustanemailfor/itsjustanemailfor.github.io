@@ -1,0 +1,89 @@
+{
+    "name_of_dish": "Paneer tikka masala",
+    "dishes": [
+        {
+            "dish_name": "Kalakand",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Cham cham",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 5,
+            "ring": 3
+        },
+        {
+            "dish_name": "Butter chicken",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chicken Tikka masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dal makhani ",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kadai paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kofta",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Mushroom do pyaza",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Palak paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Paneer butter masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shahi paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Tandoori Chicken",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Copra paak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shufta",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        }
+    ]
+}

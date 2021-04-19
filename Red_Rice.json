@@ -1,0 +1,101 @@
+{
+    "name_of_dish": "Red Rice",
+    "dishes": [
+        {
+            "dish_name": "Pork Bharta",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Butter chicken",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chana masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chapati",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Dal tadka",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Naan",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Palak paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Paneer butter masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Paratha",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kuzhambu",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Uttapam",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Bengena Pitika",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Black rice",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Brown Rice",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chingri malai curry",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Koldil Duck",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 2
+        }
+    ]
+}

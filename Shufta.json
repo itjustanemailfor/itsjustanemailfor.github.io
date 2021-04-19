@@ -1,0 +1,113 @@
+{
+    "name_of_dish": "Shufta",
+    "dishes": [
+        {
+            "dish_name": "Ghevar",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 7,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kalakand",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Ras malai",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Daal baati churma",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kadai paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kofta",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Palak paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Paneer butter masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Paneer tikka masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shahi paneer",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shahi tukra",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Coconut vadi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dahi vada",
+            "flavor_profile": "Sour",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Gud papdi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mohanthal",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Churma Ladoo",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Black rice",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Pani Pitha",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 3,
+            "ring": 3
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "name_of_dish": "Kanji",
+    "dishes": [
+        {
+            "dish_name": "Gajar ka halwa",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 5,
+            "ring": 3
+        },
+        {
+            "dish_name": "Bhindi masala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dal makhani ",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Karela bharta",
+            "flavor_profile": "Bitter",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Makki di roti sarson da saag",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Vegetable jalfrezi",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Keerai poriyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Beef Fry",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 3
+        },
+        {
+            "dish_name": "Poriyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Zunka",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chakali",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chorafali",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dalithoy",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dhokla",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Jeera Aloo",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Koshimbir",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Puri Bhaji",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mag Dhokli",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kumol Sawul",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 3
+        }
+    ]
+}

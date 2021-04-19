@@ -1,0 +1,455 @@
+{
+    "name_of_dish": "Puttu",
+    "dishes": [
+        {
+            "dish_name": "Balu shahi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Boondi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Gajar ka halwa",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 5,
+            "ring": 3
+        },
+        {
+            "dish_name": "Ghevar",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 8,
+            "ring": 3
+        },
+        {
+            "dish_name": "Gulab jamun",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 7,
+            "ring": 3
+        },
+        {
+            "dish_name": "Imarti",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kaju katli",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kalakand",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kheer",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Laddu",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Lassi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Nankhatai",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 5,
+            "ring": 3
+        },
+        {
+            "dish_name": "Petha",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Phirni",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Rabri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Singori",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Sohan papdi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chhena jalebi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chhena kheeri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chhena poda",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Cham cham",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kheer sagar",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Ledikeni",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Lyangcha",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mihidana",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Pantua",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Rasgulla",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Sandesh",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Bandar laddu",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 6,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dharwad pedha",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Gavvalu",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kakinada khaja",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mysore pak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 6,
+            "ring": 2
+        },
+        {
+            "dish_name": "Obbattu holige",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 6,
+            "ring": 3
+        },
+        {
+            "dish_name": "Pootharekulu",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Qubani ka meetha",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Unni Appam",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kajjikaya",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Basundi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Doodhpak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mahim halwa",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Modak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shankarpali",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shrikhand",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Sutar feni",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chak Hao Kheer",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kulfi falooda",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Currivepillai sadam ",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Idiappam",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Keerai masiyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Keerai poriyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Beef Fry",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kuzhakkattai",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Payasam",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Poriyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Theeyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Upma",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kolim Jawla",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Coconut vadi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chevdo",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Copra paak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dhokla",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Dudhi halwa",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Keri no ras",
+            "flavor_profile": "Sour",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Sev khamani",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Sev tameta",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Surnoli",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Veg Kolhapuri",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Khaman",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Turiya Patra Vatana sabji",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chingri Bhape",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mishti Chholar Dal",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Payokh",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Prawn malai curry",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Pinaca",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        }
+    ]
+}

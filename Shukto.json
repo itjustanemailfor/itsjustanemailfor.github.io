@@ -1,0 +1,89 @@
+{
+    "name_of_dish": "Shukto",
+    "dishes": [
+        {
+            "dish_name": "Unni Appam",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Karela bharta",
+            "flavor_profile": "Bitter",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Navrattan korma",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Vegetable jalfrezi",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Avial",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Bisi bele bath",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kootu",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Poriyal",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Sambar",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Veg Kolhapuri",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Turiya Patra Vatana sabji",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Masor tenga",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Bengena Pitika",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Koldil Duck",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 2
+        }
+    ]
+}

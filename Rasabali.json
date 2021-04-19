@@ -1,0 +1,83 @@
+{
+    "name_of_dish": "Rasabali",
+    "dishes": [
+        {
+            "dish_name": "Rabri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Singori",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chhena jalebi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chhena kheeri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Chhena poda",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kheer sagar",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 1
+        },
+        {
+            "dish_name": "Ledikeni",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Pantua",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Ras malai",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 1
+        },
+        {
+            "dish_name": "Rasgulla",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Mysore pak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 7,
+            "ring": 2
+        },
+        {
+            "dish_name": "Coconut vadi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Copra paak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 2
+        }
+    ]
+}

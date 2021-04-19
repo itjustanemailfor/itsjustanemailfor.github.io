@@ -1,0 +1,95 @@
+{
+    "name_of_dish": "Bhakri",
+    "dishes": [
+        {
+            "dish_name": "Chicken razala",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 5,
+            "ring": 2
+        },
+        {
+            "dish_name": "Pattor",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Currivepillai sadam ",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Sandige",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Khandvi",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Muthiya",
+            "flavor_profile": "Bitter",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Patra",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Thalipeeth",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Khichu",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Thepla",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Khaman",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Churma Ladoo",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Bengena Pitika",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Pani Pitha",
+            "flavor_profile": "Neutral",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Til Pitha",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        }
+    ]
+}

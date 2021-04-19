@@ -1,0 +1,125 @@
+{
+    "name_of_dish": "Dhondas",
+    "dishes": [
+        {
+            "dish_name": "Sheera",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Gavvalu",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Mysore pak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 7,
+            "ring": 2
+        },
+        {
+            "dish_name": "Mahim halwa",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 2
+        },
+        {
+            "dish_name": "Shankarpali",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Bhatura",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Kachori",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Panjeeri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Koshambri",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Pachadi",
+            "flavor_profile": "Sour",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Saath",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Bombil fry",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Dhokla",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Ghooghra",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 2
+        },
+        {
+            "dish_name": "Halvasan",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Koshimbir",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Methi na Gota",
+            "flavor_profile": "Bitter",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Muthiya",
+            "flavor_profile": "Bitter",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Farsi Puri",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        },
+        {
+            "dish_name": "Khaman",
+            "flavor_profile": "Spicy",
+            "different_ingredients": 4,
+            "ring": 2
+        }
+    ]
+}

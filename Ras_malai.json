@@ -1,0 +1,101 @@
+{
+    "name_of_dish": "Ras malai",
+    "dishes": [
+        {
+            "dish_name": "Ghevar",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 8,
+            "ring": 3
+        },
+        {
+            "dish_name": "Rabri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Singori",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chhena jalebi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chhena kheeri",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Chhena poda",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 1,
+            "ring": 3
+        },
+        {
+            "dish_name": "Kheer sagar",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 2
+        },
+        {
+            "dish_name": "Ledikeni",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Pantua",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Rasabali",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 0,
+            "ring": 2
+        },
+        {
+            "dish_name": "Rasgulla",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 2,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mysore pak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 7,
+            "ring": 3
+        },
+        {
+            "dish_name": "Coconut vadi",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 3,
+            "ring": 3
+        },
+        {
+            "dish_name": "Copra paak",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Mohanthal",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        },
+        {
+            "dish_name": "Shufta",
+            "flavor_profile": "Sweet",
+            "different_ingredients": 4,
+            "ring": 3
+        }
+    ]
+}
