@@ -1,332 +1,335 @@
 <!DOCTYPE html>
+
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-   <script src="https://d3js.org/d3.v4.min.js"></script>
-   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
 <style>
-   text {
-   font-family: 'Karla', sans-serif;
-   }
-   #panel {
-   text-align: center;
-   }
-   .btn {
-   color: darkgray;
-   background: transparent; 
-   border: 2px solid darkgray; 
-   border-radius: 6px; 
-   padding: 8px 16px;
-   text-align: center;
-   display: inline-block;
-   font-size: 0.8em;
-   margin: 4px 2px;
-   -webkit-transition-duration: 0.4s; /* Safari */
-   transition-duration: 0.4s;
-   cursor: pointer;
-   text-decoration: none;
-   text-transform: uppercase;
-   }
-   .btn:hover {
-   background-color: darkgray;
-   color: white;
-   }
-   .btn:focus {
-   background-color: darkgray;
-   color: white;
-   }
-</style>
-<body>
-<div id='CIRCLE'></div>
-   <div id="chart">
-      <div id='panel'>
-         <input name="type" 
-            type="button" 
-            class="btn"
-            id="update"
-            style="display: none"
-            value="Update"/>
-      </div>
-	  
-   </div>
-   </div>
-   <script>
-      var radialChart = function () {
-      
-        ///////////////////////////////////////////////////////////////////////////
-        ///////////////////////////////// Globals /////////////////////////////////
-        /////////////////////////////////////////////////////////////////////////// 
-        var fociRadius, radial
-        var canvasDim = { width: screen.width, height: screen.height}
-        var margin = {top: screen.height/2, right: 20, bottom: 20, left: screen.width/2}
-        var width = canvasDim.width - margin.left - margin.right;
-        var height = canvasDim.height - margin.top - margin.bottom;
-        var modal = d3.select("#chart")
-      
-        var t = d3.transition()
-          .duration(2000)
-          .ease(d3.easeQuadOut)
-      
-        ///////////////////////////////////////////////////////////////////////////
-        ///////////////////////////// Create scales ///////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////
-      
-        var ringLevelScale = d3.scaleLinear()
-          .domain([1, 6])
-      
-        var rScale = d3.scaleLinear()
-          .range([0, 2 * Math.PI])
-      
-        var fociRadius = d3.scaleLinear()
-          .range([80, 350])
-          .domain([0, 5])
-      
-        var flavorProfileColor = {0:"#9e62c4",1:"#bcbf00",2:"#ff7701",3:"#945347",4:"#7f7f7f"}
-      
-        ///////////////////////////////////////////////////////////////////////////
-        /////////////////////////////////// CORE //////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////
-      
-        return { 
-          clear : function () {
-            modal.select("svg").remove()
-          },
-          run : function () {
-		  
-			var showLabels = false;
-      
-            //////////////////// Set up and initiate containers ///////////////////////
-            var svg = modal.append("svg")
-              .attr("width", width + margin.left + margin.right)
-              .attr("height", height + margin.top + margin.bottom)
-      
-            g = svg.append("g")
-                .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-      
-            radialG = g.append("g")
-              .attr("class", "radialG")
-      
-            pointsG = g.append("g")
-              .attr("class", "pointsG")
-			  
-			centeredCircle = g.append('circle')
-			  .attr('cx', 0)
-			  .attr('cy', 0)
-			  .attr('r', 50)
-			  .attr('stroke', 'black')
-			  .attr('fill', '#f5f5dc');
-			  
-			circleText = g.append('text')
-			
-			  
-			
-      
-            ////////////////////////// Run animation sequence /////////////////////////
-      
-      d3.json("Masala_Dosa.json", function(data){
-      var dataset = getData(data)
-	  
-		var n = data.name_of_dish
-		f = n.split(" ")
-	    
-		circleText.attr("dx", -40).attr("dy", 0)
-	    .text(f.join('\n')).append('text')
-		
-		console.log(f.join('\n'))
+  text {
+    font-family: 'Karla', sans-serif;
+  }
 
-      
-      // Write a Function to  
-      
+  #panel {
+    text-align: center;
+  }
+
+  .btn {
+    color: darkgray;
+    background: transparent;
+    border: 2px solid darkgray;
+    border-radius: 6px;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .btn:hover {
+    background-color: darkgray;
+    color: white;
+  }
+
+  .btn:focus {
+    background-color: darkgray;
+    color: white;
+  }
+</style>
+
+<body>
+  <div id='CIRCLE'></div>
+  <div id="chart">
+    <div id='panel'>
+      <input name="type" type="button" class="btn" id="update" style="display: none" value="Update" />
+    </div>
+
+  </div>
+  </div>
+  <script>
+    var radialChart = function () {
+
+      ///////////////////////////////////////////////////////////////////////////
+      ///////////////////////////////// Globals /////////////////////////////////
+      /////////////////////////////////////////////////////////////////////////// 
+      var fociRadius, radial
+      var canvasDim = { width: screen.width, height: screen.height }
+      var margin = { top: screen.height / 2 - 30, right: 20, bottom: 20, left: screen.width / 3.5 - 20 }
+      var width = canvasDim.width - margin.left - margin.right;
+      var height = canvasDim.height - margin.top - margin.bottom;
+      var modal = d3.select("#chart")
+
+      var t = d3.transition()
+        .duration(2000)
+        .ease(d3.easeQuadOut)
+
+      ///////////////////////////////////////////////////////////////////////////
+      ///////////////////////////// Create scales ///////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////
+
+      var ringLevelScale = d3.scaleLinear()
+        .domain([1, 6])
+
+      var rScale = d3.scaleLinear()
+        .range([0, 2 * Math.PI])
+
+      var fociRadius = d3.scaleLinear()
+        .range([80, 350])
+        .domain([0, 5])
+
+      var flavorProfileColor = { 0: "#9e62c4", 1: "#bcbf00", 2: "#ff7701", 3: "#945347", 4: "#7f7f7f" }
+
+      ///////////////////////////////////////////////////////////////////////////
+      /////////////////////////////////// CORE //////////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////
+
+      return {
+        clear: function () {
+          modal.select("svg").remove()
+        },
+        run: function () {
+
+          var showLabels = false;
+
+          //////////////////// Set up and initiate containers ///////////////////////
+          var svg = modal.append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+
+          g = svg.append("g")
+            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+
+          radialG = g.append("g")
+            .attr("class", "radialG")
+
+          pointsG = g.append("g")
+            .attr("class", "pointsG")
+
+          centeredCircle = g.append('circle')
+            .attr('cx', 0)
+            .attr('cy', 0)
+            .attr('r', 50)
+            .attr('stroke', 'black')
+            .attr('fill', '#f5f5dc');
+
+          circleText = g.append('text')
+
+
+
+
+          ////////////////////////// Run animation sequence /////////////////////////
+
+          d3.json("Masala_Dosa.json", function (data) {
+            var dataset = getData(data)
+
+            var n = data.name_of_dish
+            f = n.split(" ")
+
+            circleText.attr("dx", -40).attr("dy", 0)
+              .text(f.join('\n')).append('text')
+
+            console.log(f.join('\n'))
+
+
+            // Write a Function to  
+
             radialChart(dataset.dishes, dataset.flavorProfile)
             // donutChart(data.flavorProfile)
-      
+
             d3.select('#update').on("click", function () {
               dataset.dishes.forEach((d) => {
-			  d.index = d.index + (0.4/(2*Math.PI))
+                d.index = d.index + (0.4 / (2 * Math.PI))
               })
               updatePoints(dataset.dishes)
             })
-      
-      
-      function revolution(){
-      // do whatever you like here
-      
-      setTimeout(revolution, 100);
-      document.getElementById("update").click();
-      /*d3.select('#update').on("click", function () {
-              dataset.dishes.forEach((d) => {
-       d.index = d.index + (1/(2*Math.PI))
-              })
-              updatePoints(dataset.dishes)
-      console.log(dataset.dishes)
-            })*/
-      }
-      
-      revolution();
-      
-      
-      });
-      
-      
-          }
-        }
-      
-        ///////////////////////////////////////////////////////////////////////////
-        /////////////////////////////// Data Processing ///////////////////////////
-        ///////////////////////////////////////////////////////////////////////////
-      
-        function getData(dataset){
-      
-          var dishes = []
-		  
-      
-      var flavor_profile_index = {"Spicy":0,"Sour":1,"Sweet":2,"Bitter":3,"Neutral":5}
-      
-          dataset.dishes.forEach((d,i) => {
-            dishes.push({
-              ringLevel : d.ring+1,
-              index : i,
-      dish_name: d.dish_name,
-              flavorProfile : flavor_profile_index[d.flavor_profile],
-      different_ingredients: d.different_ingredients
-            })
-          })
-      
-          dishes.sort(function(x, y){
-            return d3.ascending(x.flavorProfile, y.flavorProfile); //sort by flavorProfile number
-          })
-      
-          var flavorProfile = d3.nest()
-            .key(function(d) { return +d.flavorProfile; })
-            .rollup(function(leaves) { return leaves.length; })
-            .entries(dishes)
-          console.log(flavorProfile)
-                
-          return {dishes: dishes, flavorProfile: flavorProfile}
-      
-        }
-      
-        
-        /////////////////////// Create radial chart for flavorProfile ringLevel //////////////////
-        function radialChart(dishes) {
-      
-		  var ring_index= {1:"I", 2:"II", 3:"III", 4:"IV", 5:"V"}
-          var ticks = fociRadius.ticks(5)
-          ticks.unshift(0)
-          
-          // create concentric lines 
-          radial = radialG.selectAll('g').data(ticks, d=>d)
-      
-          var gr = radial.enter().append('g')
-            .attr('class', 'r axis')
-      
-          gr.append('circle')
-            .attr('r', fociRadius)
-            .attr('stroke', function(d) {return 'darkgray'})
-            .attr('fill', function(d) {return 'none'})
-      
-          gr.append("text")
-            .attr("y", fociRadius)
-            .attr("dy", "0.35em")
-            .attr("fill", "none")
-            .attr("stroke", "black")
-            .attr("stroke-width", 1)
-            .attr("stroke-linejoin", "round")
-            .text(function(d) { return ring_index[d] })
-      
-          // create polar scatter plot
-          ringLevelScale.range([fociRadius.range()[0], fociRadius.range()[1]])
-          rScale.domain([0, dishes.length])
-          dishes.map((d,i)=>{
-            d.index = d.index
-          })
-      
-          
-          updatePoints(dishes)
-        }
-		
-      
-        function updatePoints(data, showL = true) {
-      
-          var line = d3.lineRadial()
-            .radius(function(d) { return ringLevelScale(d.ringLevel) })
-            .angle(function(d,i) { return rScale(d.index) })
-      
-          radialPoint = pointsG.selectAll('circle').data(data, d=>d.index)
-		
-      
-          radialPoint.exit().remove()
-      
-          var entered_radialPoint = radialPoint
-            .enter().append('circle')
-              .attr('class', function(d) { return 'point-' + d.index })
-              .attr('transform', function(d) {
-                var coors = line([0]).slice(1).slice(0, -1);				// removes 'M' and 'Z' from string
-                return 'translate(' + coors + ')'
-              })
-              .attr('r', function(d) { return d.different_ingredients + 3 })
-              .attr('fill',function(d,i){ return flavorProfileColor[d.flavorProfile] })
-			  .append("svg:title")
-			  .text(function(d) {return d.dish_name;})
-      
-	  
-      
-      
-          radialPoint = radialPoint.merge(entered_radialPoint)
-      
-			
-		if(showL){
-		labelPoint = pointsG.selectAll('text').data(data, d=>d.index)
-		  
-		 labelPoint.exit().remove()
-		 
-		 var label_radialPoint = labelPoint.enter().append('text').text(function(d) { return d.dish_name}).attr("font-size", "15px").attr("dx", 8)
-		 .attr('class', function(d) { return 'point-' + d.index+(4/Math.PI) })
-              .attr('transform', function(d) {
-                var coors = line([0]).slice(1).slice(0, -1); // removes 'M' and 'Z' from string
-                return 'translate(' + coors + ')'
-              })
-              .attr('fill',function(d,i){ return flavorProfileColor[d.flavorProfile] });
-			  
-				// labelPoint = labelPoint.merge(label_radialPoint)
-		  console.log(parseInt(line([data[0]]).slice(1).slice(0, -1).split(",")[0]));
-		  labelPoint.text(function(d) {if ((d.ringLevel < 5 && parseInt(line([d]).slice(1).slice(0, -1).split(",")[0]) < -30*d.ringLevel) )  {return d.dish_name} else {return ""} })
-		  labelPoint = labelPoint.merge(label_radialPoint)
-    // || (d.ringLevel > 3 && parseInt(line([d]).slice(1).slice(0, -1).split(",")[0]) > 55*d.ringLevel)
-	//if (parseInt(line([d]).slice(1).slice(0, -1).split(",")[0]) < -50*d.ringLevel) {return d.dish_name} else {return ""}
 
- labelPoint.transition().duration(2000).ease(d3.easeQuadOut)
-            .attr('transform', function(d) {
+
+            function revolution() {
+              // do whatever you like here
+
+              setTimeout(revolution, 100);
+              document.getElementById("update").click();
+              /*d3.select('#update').on("click", function () {
+                      dataset.dishes.forEach((d) => {
+               d.index = d.index + (1/(2*Math.PI))
+                      })
+                      updatePoints(dataset.dishes)
+              console.log(dataset.dishes)
+                    })*/
+            }
+
+            revolution();
+
+
+          });
+
+
+        }
+      }
+
+      ///////////////////////////////////////////////////////////////////////////
+      /////////////////////////////// Data Processing ///////////////////////////
+      ///////////////////////////////////////////////////////////////////////////
+
+      function getData(dataset) {
+
+        var dishes = []
+
+
+        var flavor_profile_index = { "Spicy": 0, "Sour": 1, "Sweet": 2, "Bitter": 3, "Neutral": 5 }
+
+        dataset.dishes.forEach((d, i) => {
+          dishes.push({
+            ringLevel: d.ring + 1,
+            index: i,
+            dish_name: d.dish_name,
+            flavorProfile: flavor_profile_index[d.flavor_profile],
+            different_ingredients: d.different_ingredients
+          })
+        })
+
+        dishes.sort(function (x, y) {
+          return d3.ascending(x.flavorProfile, y.flavorProfile); //sort by flavorProfile number
+        })
+
+        var flavorProfile = d3.nest()
+          .key(function (d) { return +d.flavorProfile; })
+          .rollup(function (leaves) { return leaves.length; })
+          .entries(dishes)
+        console.log(flavorProfile)
+
+        return { dishes: dishes, flavorProfile: flavorProfile }
+
+      }
+
+
+      /////////////////////// Create radial chart for flavorProfile ringLevel //////////////////
+      function radialChart(dishes) {
+
+        var ring_index = { 1: "I", 2: "II", 3: "III", 4: "IV", 5: "V" }
+        var ticks = fociRadius.ticks(5)
+        ticks.unshift(0)
+
+        // create concentric lines 
+        radial = radialG.selectAll('g').data(ticks, d => d)
+
+        var gr = radial.enter().append('g')
+          .attr('class', 'r axis')
+
+        gr.append('circle')
+          .attr('r', fociRadius)
+          .attr('stroke', function (d) { return 'darkgray' })
+          .attr('fill', function (d) { return 'none' })
+
+        gr.append("text")
+          .attr("y", fociRadius)
+          .attr("dy", "0.35em")
+          .attr("fill", "none")
+          .attr("stroke", "black")
+          .attr("stroke-width", 1)
+          .attr("stroke-linejoin", "round")
+          .text(function (d) { return ring_index[d] })
+
+        // create polar scatter plot
+        ringLevelScale.range([fociRadius.range()[0], fociRadius.range()[1]])
+        rScale.domain([0, dishes.length])
+        dishes.map((d, i) => {
+          d.index = d.index
+        })
+
+
+        updatePoints(dishes)
+      }
+
+
+      function updatePoints(data, showL = true) {
+
+        var line = d3.lineRadial()
+          .radius(function (d) { return ringLevelScale(d.ringLevel) })
+          .angle(function (d, i) { return rScale(d.index) })
+
+        radialPoint = pointsG.selectAll('circle').data(data, d => d.index)
+
+
+        radialPoint.exit().remove()
+
+        var entered_radialPoint = radialPoint
+          .enter().append('circle')
+          .attr('class', function (d) { return 'point-' + d.index })
+          .attr('transform', function (d) {
+            var coors = line([0]).slice(1).slice(0, -1);				// removes 'M' and 'Z' from string
+            return 'translate(' + coors + ')'
+          })
+          .attr('r', function (d) { return d.different_ingredients + 3 })
+          .attr('fill', function (d, i) { return flavorProfileColor[d.flavorProfile] })
+          .append("svg:title")
+          .text(function (d) { return d.dish_name; })
+
+
+
+
+        radialPoint = radialPoint.merge(entered_radialPoint)
+
+
+        if (showL) {
+          labelPoint = pointsG.selectAll('text').data(data, d => d.index)
+
+          labelPoint.exit().remove()
+
+          var label_radialPoint = labelPoint.enter().append('text').text(function (d) { return d.dish_name }).attr("font-size", "15px").attr("dx", 8)
+            .attr('class', function (d) { return 'point-' + d.index + (4 / Math.PI) })
+            .attr('transform', function (d) {
+              var coors = line([0]).slice(1).slice(0, -1); // removes 'M' and 'Z' from string
+              return 'translate(' + coors + ')'
+            })
+            .attr('fill', function (d, i) { return flavorProfileColor[d.flavorProfile] });
+
+          // labelPoint = labelPoint.merge(label_radialPoint)
+          console.log(parseInt(line([data[0]]).slice(1).slice(0, -1).split(",")[0]));
+          labelPoint.text(function (d) { if ((d.ringLevel < 5 && parseInt(line([d]).slice(1).slice(0, -1).split(",")[0]) < -30 * d.ringLevel)) { return d.dish_name } else { return "" } })
+          labelPoint = labelPoint.merge(label_radialPoint)
+          // || (d.ringLevel > 3 && parseInt(line([d]).slice(1).slice(0, -1).split(",")[0]) > 55*d.ringLevel)
+          //if (parseInt(line([d]).slice(1).slice(0, -1).split(",")[0]) < -50*d.ringLevel) {return d.dish_name} else {return ""}
+
+          labelPoint.transition().duration(2000).ease(d3.easeQuadOut)
+            .attr('transform', function (d) {
               var coors = line([d]).slice(1).slice(0, -1); // removes 'M' and 'Z' from string
               return 'translate(' + coors + ')'
             })
-		};
-		
-		 radialPoint.transition().duration(2000).ease(d3.easeQuadOut)
-            .attr('transform', function(d) {
-              var coors = line([d]).slice(1).slice(0, -1);
-			   // removes 'M' and 'Z' from string
-              return 'translate(' + coors + ')'
-            })
-      
-        }
-      
-        function randBetween(min, max) {
-          return min + ((max - min) * Math.random());
-        }
-      
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-      
-      }()
-      
-   </script>
-   <script>
-      radialChart.run()
-   </script>
+        };
+
+        radialPoint.transition().duration(2000).ease(d3.easeQuadOut)
+          .attr('transform', function (d) {
+            var coors = line([d]).slice(1).slice(0, -1);
+            // removes 'M' and 'Z' from string
+            return 'translate(' + coors + ')'
+          })
+
+      }
+
+      function randBetween(min, max) {
+        return min + ((max - min) * Math.random());
+      }
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+    }()
+
+  </script>
+  <script>
+    radialChart.run()
+  </script>
 </body>
+
 </html>
